@@ -58,6 +58,14 @@ Assuming you have a C++ compiler, run:
 make # requires an internet connection to download FreeType and fonts
 ```
 
+For a simple example of how to use the library to programmatically create music, see `tool/util-simple.cpp`. To execute this program, run:
+
+```
+make simple
+bin/simple
+# creates: output.pdf
+```
+
 To execute the tests including generating the test suite specimen, run:
 
 ```

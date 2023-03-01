@@ -26,6 +26,8 @@ DOWNLOAD=curl -Ls -o $(2) $(1)
 
 engrave: $(BIN_DIR)/engrave
 
+simple: $(BIN_DIR)/simple
+
 all: engrave demo
 
 demo: $(TOOL_DEMO)
@@ -117,6 +119,12 @@ $(BIN_DIR)/engrave: $(TOOL_DIR)/util-engrave.cpp $(BELLE_DEPS) \
 	$(info * Building engrave)
 	mkdir -p $(BIN_DIR); rm -f $(BIN_DIR)/engrave
 	$(CPP_LINE) -o $(BIN_DIR)/engrave $<
+
+$(BIN_DIR)/simple: $(TOOL_DIR)/util-simple.cpp $(BELLE_DEPS) \
+	                $(INCLUDE_DIR)/mica.h $(INCLUDE_DIR)/resources.h
+	$(info * Building simple)
+	mkdir -p $(BIN_DIR); rm -f $(BIN_DIR)/simple
+	$(CPP_LINE) -o $(BIN_DIR)/simple $<
 
 $(BIN_DIR)/embed: $(TOOL_DIR)/util-embed.cpp $(PRIM_DEPS)
 	$(info * Building embed)
