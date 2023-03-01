@@ -20,7 +20,7 @@ else
   WARNING_FLAGS=-Wall -Wextra
 endif
 FT_FLAGS=-I$(FT_BUILT)/include -L$(FT_BUILT)/lib -lfreetype
-GOOGLE_FONT=https://github.com/google/fonts/blob/master
+GOOGLE_FONT=https://github.com/google/fonts/blob/main
 CPP_LINE=$(CPP) -pthread -I$(INCLUDE_DIR) $(WARNING_FLAGS)
 DOWNLOAD=curl -Ls -o $(2) $(1)
 
