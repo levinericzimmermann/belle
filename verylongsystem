@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+bin/engrave resources/test-suite-pathetique-firstpage-1.txt --export --pagewidth 60 --systemwidth 59
