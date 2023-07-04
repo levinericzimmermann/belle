@@ -387,7 +387,7 @@
   <map>en:C 5 en:C5</map>
   <map>en:C en:Natural 5 en:C5</map>
   <map>en:C en:Sharp 5 en:CSharp5</map>
-  <map>en:C en:DoubleSharp 5 en:CDoubleSharp5</map>
+  <map>en:C en:DoubleSharp 5 en:C5</map>
   <map>en:C en:TripleSharp 5 en:CTripleSharp5</map>
 
   <map>en:D en:TripleFlat 5 en:DTripleFlat5</map>

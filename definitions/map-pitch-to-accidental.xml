@@ -344,7 +344,7 @@
   <map>en:CFlat5 en:Accidental en:Flat</map>
   <map>en:C5 en:Accidental en:Natural</map>
   <map>en:CSharp5 en:Accidental en:Sharp</map>
-  <map>en:CDoubleSharp5 en:Accidental en:DoubleSharp</map>
+  <map>en:CDoubleSharp5 en:Accidental en:Natural</map>
   <map>en:CTripleSharp5 en:Accidental en:TripleSharp</map>
 
   <map>en:DTripleFlat5 en:Accidental en:TripleFlat</map>

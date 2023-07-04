@@ -344,7 +344,7 @@
   <map>en:C5 en:Flat en:CFlat5</map>
   <map>en:C5 en:Natural en:C5</map>
   <map>en:C5 en:Sharp en:CSharp5</map>
-  <map>en:C5 en:DoubleSharp en:CDoubleSharp5</map>
+  <map>en:C5 en:DoubleSharp en:C5</map>
   <map>en:C5 en:TripleSharp en:CTripleSharp5</map>
 
   <map>en:D5 en:TripleFlat en:DTripleFlat5</map>

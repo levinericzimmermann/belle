@@ -8,7 +8,7 @@
   <map>en:CFlat en:Accidental en:Flat</map>
   <map>en:C en:Accidental en:Natural</map>
   <map>en:CSharp en:Accidental en:Sharp</map>
-  <map>en:CDoubleSharp en:Accidental en:DoubleSharp</map>
+  <map>en:CDoubleSharp en:Accidental en:Natural</map>
   <map>en:CTripleSharp en:Accidental en:TripleSharp</map>
 
   <map>en:DTripleFlat en:Accidental en:TripleFlat</map>

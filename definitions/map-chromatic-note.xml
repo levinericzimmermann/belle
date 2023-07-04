@@ -344,7 +344,7 @@
   <map>en:CFlat5 en:ChromaticNote en:CFlat</map>
   <map>en:C5 en:ChromaticNote en:C</map>
   <map>en:CSharp5 en:ChromaticNote en:CSharp</map>
-  <map>en:CDoubleSharp5 en:ChromaticNote en:CDoubleSharp</map>
+  <map>en:CDoubleSharp5 en:ChromaticNote en:C</map>
   <map>en:CTripleSharp5 en:ChromaticNote en:CTripleSharp</map>
 
   <map>en:DTripleFlat5 en:ChromaticNote en:DTripleFlat</map>
