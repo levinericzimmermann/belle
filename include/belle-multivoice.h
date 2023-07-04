@@ -456,12 +456,7 @@ bool IsSingleDuration(Ratio r)
 
 mica::Concept StandardNoteheadOfDuration(Ratio r)
 {
-  return r < Ratio( 1, 2) ? mica::BlackNotehead       :
-         r < Ratio( 1, 1) ? mica::HalfNotehead        :
-         r < Ratio( 2, 1) ? mica::WholeNotehead       :
-         r < Ratio( 4, 1) ? mica::DoubleWholeNotehead :
-         r < Ratio( 8, 1) ? mica::LongaNotehead       :
-         r < Ratio(32, 1) ? mica::MaximaNotehead      : mica::Undefined;
+  return mica::BlackNotehead;
 }
 
 mica::Concept NoteheadOfNote(Music::ConstNode x)
