@@ -88,42 +88,6 @@ number BeamThickness()
 
 void EngraveStems(Music::ConstNode Island, const Value& Stems, bool Beamed)
 {
-  number StemWidth = Property(Island, "StemWidth");
-  for(count i = 0; i < Stems.n(); i++)
-  {
-    Value Stem = Stems[i];
-    bool StemUp = Stem["StemUp"].AsBoolean();
-    number Direction = StemUp ? 1.f : -1.f;
-    number StemAlign = -StemWidth / 2.f * Direction;
-    Vector Start(+Stem["X"] + StemAlign,
-      +Stem["StartY"] + +Stem["JoinOffset"]);
-    Vector End(+Stem["X"] + StemAlign,
-      +Stem["EndY"]);
-    End.y += +Stem["Height"] * Direction;
-    Vector Offset = Stem["ChordOffset"].AsVector();
-
-    if(Beamed == Stem["StemHasBeam"].AsBoolean())
-    {
-      Pointer<Path> p;
-      Shapes::AddLine(*p.New(), Start + Offset, End + Offset, StemWidth,
-        true, true, true, 0.5f);
-      Pointer<Stamp> IslandStamp = StampForIsland(Island);
-      IslandStamp->Add()->p = p;
-      Vector StemJoin(-StemWidth / 2.f, 0);
-
-      if(not Beamed)
-        EngraveFlag(Island, Stem["Chord"], Stem["Duration"],
-          End + Offset + StemJoin,
-          Stem["StemUp"].AsBoolean() ? mica::Up : mica::Down);
-    }
-    else if(not Beamed and Stem["StemHasBeam"].AsBoolean())
-    {
-      /*Add virtual stem line so that it can be used for collision detection in
-      spacing.*/
-      StampForIsland(Island)->AddArtificialBounds(Box(Start + Offset,
-        End + Offset));
-    }
-  }
 }
 
 number FlagExtensionForDuration(Ratio r)
